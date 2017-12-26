@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar color="christmasRed">
+    <ion-title>
+      Christmas Bingo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg-img">
+  <ion-grid *ngIf="platform.isLandscape()">
+    <ion-row style="text-align: center;">
+      <ion-col col-2>
+
+      </ion-col>
+      <ion-col col-8>
+        <img class="pic" [src]="currentAnswer">
+      </ion-col>
+      <ion-col col-2>
+          <button class='size-previous' color="christmasYellow" text-wrap ion-button full (press)="resetGame()">
+              Previous Draw(s)
+          </button>
+        <ion-scroll class="scroll" scrollY="true">
+          <ion-list class="list" text-center>
+            <div class='div-pic' tappable *ngFor="let answer of previousAnswer; let i = index" (click)="onPreview(i)">
+                <img class="img" [src]="answer">
+            </div>
+          </ion-list>
+        </ion-scroll>
+      </ion-col>
+    </ion-row>
+    <ion-row style="text-align: center;">
+        <ion-col>
+            <button class="size" color="christmasButtonLeft" [disabled]="step == 0" ion-button round full (click)="onPrevious()">
+              Previous Set
+            </button>
+        </ion-col>
+      <ion-col>
+          <button class="size" color="christmasButtonCenter" [disabled]="currentGame.length == 0 || !spinFinish" ion-button round full (click)="onRandom()">
+            Go
+          </button>
+      </ion-col>
+      <ion-col>
+          <button class="size" color="christmasButtonRight" [disabled]="step == gameSet.length - 1" ion-button round full (click)="onNext()">
+              Next Set
+          </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div style="text-align: center;" *ngIf="platform.isPortrait()">
+      <img class="pic" [src]="currentAnswer">
+  </div>
+  <div *ngIf="platform.isPortrait()">
+      <button color="christmasButtonCenter" [disabled]="currentGame.length == 0 || !spinFinish" ion-button round full (click)="onRandom()">
+          Go
+        </button>
+    <button color="christmasButtonLeft" [disabled]="step == 0" ion-button round full (click)="onPrevious()">
+      Previous Set
+    </button>
+    <button color="christmasButtonRight" [disabled]="step == gameSet.length - 1" ion-button round full (click)="onNext()">
+        Next Set
+    </button>
+  </div>
+        <ion-grid class="scrollX" *ngIf="platform.isPortrait()">
+          <ion-row>
+            <ion-col>
+                <button class='size-previous' color="christmasYellow" text-wrap ion-button full (press)="resetGame()">
+                    Previous Draw(s)
+                </button>
+            </ion-col>
+          </ion-row>
+            <ion-row wrap>
+                    <ion-col col-3 tappable *ngFor="let answer of previousAnswer; let i = index" (click)="onPreview(i)">
+                        <img class="img" [src]="answer">
+                    </ion-col>
+            </ion-row>
+        </ion-grid>
+</ion-content>

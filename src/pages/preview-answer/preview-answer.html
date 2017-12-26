@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar hideBackButton color="christmasRed">
+        <ion-buttons left>
+            <button ion-button icon-only (click)="goBack()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+        </ion-buttons>
+        <ion-title>
+          Preview Card
+        </ion-title>
+      </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg-img">
+    <ion-grid>
+        <ion-row style="text-align: center;">
+          <ion-col col-2>
+    
+          </ion-col>
+          <ion-col col-8>
+            <img height="100%" width="60%" [src]="previewUrl">
+          </ion-col>
+          <ion-col col-2>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

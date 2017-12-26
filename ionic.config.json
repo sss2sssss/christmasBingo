@@ -1,0 +1,8 @@
+{
+  "name": "Christmas Bingo",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

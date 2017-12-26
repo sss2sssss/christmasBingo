@@ -1,0 +1,173 @@
+page-home {
+    @media screen and (max-width: 480px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+        .size-previous{
+            font-size: 60%
+        }
+         .scroll{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 70%;  
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+        }
+        .list{
+            width: 100%; 
+            height: 70%;
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+            justify-content: center;
+             align-items: center!important;
+        }
+        .scrollX{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 100%; 
+        }
+        .size{
+            max-height: 200%;
+            height: 200%;
+            font-size: 80%
+        }
+    }
+    @media screen and (min-width: 480px) and (max-width: 640px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+        .size-previous{
+            font-size: 80%
+        }
+         .scroll{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 80%;  
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+        }
+        .scrollX{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 100%; 
+        }
+        .list{
+            width: 100%; 
+            height: 80%;
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+            justify-content: center;
+            align-items: center!important;
+        }
+        .size{
+            max-height: 400%;
+            height: 400%;
+            font-size: 100%
+        }
+    }
+    @media screen and (min-width: 640px) and (max-width: 1080px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+        .size-previous{
+            font-size: 100%
+        }
+         .scroll{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 85%;  
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+        }
+        .scrollX{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 100%; 
+        }
+        .list{
+            width: 100%; 
+            height: 85%;
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+            justify-content: center;
+            align-items: center!important;
+        }
+        .size{
+            max-height: 600%;
+            height: 600%;
+            font-size: 130%
+        }
+    }
+    @media screen and (min-width: 1080px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+        .size-previous{
+            font-size: 120%
+        }
+         .scroll{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;
+            width: 100%; 
+            height: 90%;  
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+        }
+        .scrollX{
+            background-image: url('../../path/to/something');
+            background-repeat: repeat;
+            background-size:cover;            
+            width: 100%; 
+            height: 100%; 
+        }
+        .list{
+            width: 100%; 
+            height: 90%;
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 10px 15px;
+        }
+        .size{
+            max-height: 800%;
+            height: 800%;
+            font-size: 140%
+        }
+    }
+    .bg-img{
+        background-image: url('../../path/to/something');
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .img{
+        text-align: center;
+        height: 100%;
+        width: 100%
+    }
+    .div-pic{
+        text-align: center;
+        max-height: 100%;
+        max-width: 100%;
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .pic{
+       max-height: 100%;
+       max-width: 65%;
+       height: 100%;
+       width: 65%
+    }
+    .down-button{
+        font-size: 100%
+    }
+}
